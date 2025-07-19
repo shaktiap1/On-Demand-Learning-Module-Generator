@@ -6,7 +6,7 @@
 
 ## 🚀 Overview
 
-This project is a part of a larger **AI GTM OS** and was developed under the mentorship of **Dr. Daya Shankar Sharma**.
+This project was developed under the mentorship of **Dr. Daya Shankar Sharma**.
 
 It enables rapid, personalized learning content generation based on user goals and topics using **Gemini 1.5 Flash**, and refines future modules through real-time learner feedback.
 
