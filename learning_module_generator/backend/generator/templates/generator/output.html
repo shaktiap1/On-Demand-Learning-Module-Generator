@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Generated Module</title>
+  <link rel="stylesheet" href="{% static 'generator/style.css' %}">
+</head>
+<body>
+  <div class="container">
+    <h1>Learning Module for "{{ topic }}"</h1>
+    <pre style="white-space: pre-wrap">{{ module }}</pre>
+    <a href="/">← Generate another</a>
+  </div>
+</body>
+</html>

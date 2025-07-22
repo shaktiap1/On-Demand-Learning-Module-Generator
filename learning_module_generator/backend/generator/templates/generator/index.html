@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Module Generator</title>
+  <link rel="stylesheet" href="{% static 'generator/style.css' %}">
+</head>
+<body>
+  <div class="container">
+    <h1>On-Demand Learning Module Generator</h1>
+    <form method="post">
+      {% csrf_token %}
+      <label>Topic:</label><br>
+      <input type="text" name="topic" required><br><br>
+      <label>Level:</label><br>
+      <select name="level">
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select><br><br>
+      <button type="submit">Generate Module</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{% extends "generator/base.html" %}
+{% block content %}
+  <form method="post">{% csrf_token %}
+    <div><label>Topic:</label><br><input name="topic" required style="width:100%;"/></div>
+    <div><label>Audience (e.g. beginner):</label><br><input name="audience" style="width:100%;"/></div>
+    <button type="submit">Generate Module</button>
+  </form>
+
+  {% if content %}
+    <h2>Generated Module</h2>
+    <pre style="white-space:pre-wrap;border:1px solid #eee;padding:1rem;">{{ content }}</pre>
+    <p style="font-size:0.9em;color:#555">Saved with ID: {{ doc_id }}</p>
+  {% endif %}
+{% endblock %}
